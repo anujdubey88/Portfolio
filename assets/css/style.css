@@ -830,9 +830,9 @@ main {
 }
 
 .resume header .content-card {
-  margin-left: 5rem;
-  margin: 1rem;
-  width: 13rem;
+  /* margin-left: 3rem; */
+  margin-bottom: 1rem;
+  width: 14rem;
   height: 4.5rem;
 }
 .resume header .content-card a{
