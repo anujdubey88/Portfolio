@@ -555,6 +555,10 @@ main {
   line-height: 1.6;
 }
 
+.service-icon-box img{
+  color: white;
+}
+
 
 /**
  * #testimonials 
