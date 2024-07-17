@@ -440,7 +440,7 @@ main {
 
 .social-item .social-link {
   color: var(--light-gray-70);
-  font-size: 18px;
+  font-size: 20px;
 }
 
 
@@ -598,6 +598,14 @@ main {
 }
 
 .testimonials-item-title { margin-bottom: 7px; }
+
+.test-link{
+  position: absolute;
+  right: 0;
+  top: 0;
+  transform:translate(10px,-10px) ;
+  font-size: 30px;
+}
 
 .testimonials-text {
   color: var(--light-gray);
