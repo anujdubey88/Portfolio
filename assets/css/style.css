@@ -603,8 +603,8 @@ main {
   position: absolute;
   right: 0;
   top: 0;
-  transform:translate(10px,-10px) ;
-  font-size: 30px;
+  transform:translate(20px,-20px) ;
+  font-size: 40px;
 }
 
 .testimonials-text {
@@ -1278,7 +1278,7 @@ textarea.form-input::-webkit-resizer { display: none; }
  * responsive larger than 450px screen
  */
 
-@media (min-width: 450px) {
+@media (min-width: 350px) {
 
   /**
    * client
@@ -1295,6 +1295,11 @@ textarea.form-input::-webkit-resizer { display: none; }
   .project-img,
   .blog-banner-box { height: auto; }
 
+  .content-card {
+    padding: 30px;
+    padding-top: 25px;
+  }
+  
 }
 
 
