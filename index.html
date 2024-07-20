@@ -340,6 +340,24 @@
 
               </div>
             </li>
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="60" data-testimonials-avatar>
+                </figure>
+                
+                <a href="https://www.linkedin.com/in/tarun-sharma-59531218/" target="_blank" class="test-link"><ion-icon name="logo-linkedin" style="color: gold;"></ion-icon></a>
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Dr. Kapil Pareek</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Anuj working on integrating Dobot robots, thermal camera, battery test equipment, and thermal chamber within a Python environment was outstanding. His dedication and quick understanding of problem statement helped in delivering the project on time.
+                  </p>
+                </div>
+
+              </div>
+            </li>
 
             <!-- <li class="testimonials-item">
               <div class="content-card" data-testimonials-item>
@@ -383,9 +401,9 @@
                 </div>
 
               </div>
-            </li>
+            </li> -->
 
-            <li class="testimonials-item">
+            <!-- <li class="testimonials-item">
               <div class="content-card" data-testimonials-item>
 
                 <figure class="testimonials-avatar-box">
@@ -1160,17 +1178,17 @@ competitions, consistently achieving high ranks due to our innovative work and s
 
           <h3 class="h3 form-title">Contact Form</h3>
 
-          <form action="#" class="form" data-form>
+          <form  class="form" onsubmit="sendEmail()">
 
             <div class="input-wrapper">
               <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
 
-              <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
+              <input type="email" name="email" id="email" class="form-input" placeholder="Email address" required data-form-input>
             </div>
 
-            <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
+            <textarea name="message" id="Massage" class="form-input" placeholder="Your Message" required data-form-input></textarea>
 
-            <button class="form-btn" type="submit" disabled data-form-btn>
+            <button class="form-btn" type="submit" data-form-btn>
               <ion-icon name="paper-plane"></ion-icon>
               <span>Send Message</span>
             </button>
@@ -1200,7 +1218,22 @@ competitions, consistently achieving high ranks due to our innovative work and s
   -->
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-
+  <script src="https://smtpjs.com/v3/smtp.js"></script>
+  <script>
+    function sendEmail(){
+        Email.send({
+        Host : "smtp.gmail.com",
+        Username : "anujd1595@gmail.com",
+        Password : "anujd8866",
+        To : 'anujd1595@gmail.com',
+        From : document.getElementById('email').value,
+        Subject : "From My Portfolio",
+        Body : document.getElementById('Massage').value
+    }).then(
+      message => alert(message)
+    );
+    }
+  </script>
 </body>
 
 </html>
